@@ -14,6 +14,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.logging.Level;
 
 
 public class H2User  implements AutoCloseable {
@@ -29,6 +30,7 @@ public class H2User  implements AutoCloseable {
         Class.forName("org.h2.Driver");  // ensure the driver class is loaded when the DriverManager looks for an installed class. Idiom.
         return DriverManager.getConnection(db, "iuri", "");  // default password, ok for embedded.
     }
+    private String email;
 
     public H2User() {
         this(FILE);
@@ -81,6 +83,26 @@ public class H2User  implements AutoCloseable {
         }
         return out;
     }
+
+    public boolean Login(String emailInput) {
+        final String EMAIL_QUERY = "SELECT email  FROM user WHERE email = '" + emailInput + "'";
+         try (PreparedStatement ps = connection.prepareStatement(EMAIL_QUERY)) {
+             ResultSet rs = ps.executeQuery();
+             if ( rs.next()) {
+                 return true;
+             }
+             else {
+                 return false;
+             }
+   } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+      
+    }
+  
+
+         
+    
 
     private void loadResource(String name) {
         try {

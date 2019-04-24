@@ -25,12 +25,16 @@ public class UserServlet  extends HttpServlet{
     @SuppressWarnings("unused")
     static final Logger LOG = LoggerFactory.getLogger(UserServlet.class);
 
+   
     private final H2User h2User;
     private final MustacheRenderer mustache;
     public UserServlet(H2User h2User) {
         mustache = new MustacheRenderer();
         this.h2User = h2User;
     }
+    
+  
+    
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
