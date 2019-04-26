@@ -9,8 +9,5 @@
         <module name="guice-jetty-store" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="guice-jetty-store" target="1.7" />
-    </bytecodeTargetLevel>
   </component>
 </project>
