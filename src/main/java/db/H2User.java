@@ -56,7 +56,7 @@ public class H2User  implements AutoCloseable {
             throw new RuntimeException(e);
         }
     }
-
+    
     public void addUser(User user) {
         final String ADD_USER_QUERY = "INSERT INTO user (firstName, lastName, email, password) VALUES (?,?,?,?)";
         try (PreparedStatement ps = connection.prepareStatement(ADD_USER_QUERY)) {
@@ -84,7 +84,9 @@ public class H2User  implements AutoCloseable {
         return out;
     }
 
-    public boolean Login(String emailInput) {
+    
+    
+    public boolean Login(String emailInput) { 
         final String EMAIL_QUERY = "SELECT email  FROM user WHERE email = '" + emailInput + "'";
          try (PreparedStatement ps = connection.prepareStatement(EMAIL_QUERY)) {
              ResultSet rs = ps.executeQuery();

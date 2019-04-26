@@ -63,7 +63,6 @@ public class LoginServlet extends BaseServlet{
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String emailInput = request.getParameter("email");
- 
         if (h2User.Login(emailInput) == true) {
                UserFuncs.setCurrentUser(request, emailInput);
             String targetURL = UserFuncs.getLoginRedirect(request);
