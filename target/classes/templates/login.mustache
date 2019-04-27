@@ -1,10 +1,92 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link rel='stylesheet' href='https://d33wubrfki0l68.cloudfront.net/css/9bf98939b112782a335767fca09213851415fa8f/css/style.css' />
+    <title>Web development</title>
+
+
+  </head>
+
 <body>
-<h1>Login</h1>
-<form action="/login" method="POST">
-    Name:
-    <input type="text" name="email" value="{{.}}"/><br/>
-    <input type="submit" value="Login"/>
-</form>
-</body>
+  <!-- Navigation -->
+  <header>
+    <!-- Navigation -->
+
+
+    <!-- Main nav for screen -->
+    <div class="navbar-fixed">
+      <nav class="#424242 grey darken-3">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo"><i class="material-icons">clear_all</i>Web dev</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+       <li><a href="/login">Log in</a></li>
+        <li><a href="/register.html">Sgin up</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="logout" method ="POST">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Sidenav (hidden unless mobile) -->
+    <ul class="sidenav" id="mobile-demo">
+    <li><a href="/login">Log in</a></li>
+     <li><a href="/register.html">Sgin up</a></li>
+     <li><a href="/about.html">About</a></li>
+     <li><a href="/contact.html">Contact</a></li>
+     <li><a href="logout" method ="POST">Logout</a></li>
+    </ul>
+  </header>
+
+
+	<body>
+    <form action="/login" method="POST">
+		<form action="action_page.php">
+			<div class="container">
+				<h1>Login</h1>
+				<p>Please enter your details to log in</p>
+				<hr>
+
+				<label for="email"><b>Email</b></label>
+				<input type="text" placeholder="Enter Email" name="email" required>
+
+				<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw" required>
+
+				<hr>
+
+				<button type="submit" class="loginbtn">Login</button>
+			</div>
+
+			<div class="container forgotpassword">
+				<p align="centre">Forgot password?<a href="#">Click to reset</a></p>
+			</div>
+		</form>
+		</form>
+
+	</body>
+
+ <footer class="page-footer #424242 grey darken-3">
+    <div class="container center">
+      � 2019 GCU - Web Dev
+    </div>
+    </footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src='https://d33wubrfki0l68.cloudfront.net/js/d5610ec93920603effb1e186181da84fc906c7c9/js/main.js'></script>
+
 </html>
+
+
+
+
