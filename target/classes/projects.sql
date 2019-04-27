@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS project (
+  id int AUTO_INCREMENT PRIMARY KEY,
+  nameProject VARCHAR(255),
+);

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Shop Demo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+
+    <!--calendar in input field in jsp using jquery-->
+    <style>
+        .datepicker{
+        }
+    </style>
+    <script>
+        $(function() {
+            $(".datepicker").datepicker();
+        });
+    </script>
+
+</head>
+<body>
+<div>
+    <h1>Add Milestones</h1>
+
+    <form method="POST" action="/add">
+        <h1>Add Milestones</h1>
+        <label for="nameProject">Name project:</label>
+        <label for="name" >Name milestone: </label>
+        <input type="text" id="name" name="name">
+        <label for="name" >Description: </label>
+        <input type="text" id="description" name="description">
+        <label for="name" >Due data: </label>
+        <input type="text" id="dueDate" name="dueDate" class="datepicker">
+        <label for="name" >Finish data: </label>
+        <input type="text" id="finishDate" name="finishDate" class="datepicker">
+        <input type="submit" value="add">
+    </form>
+
+    <form method="POST" action="/add1">
+        <h1>Delete Milestones</h1>
+        <label for="name" >Name milestone: </label>
+        <input type="text" id="name" name="name">
+        <input type="submit" value="add1">
+    </form>
+
+    <p>There are {{count}} total projects</p>
+</div>
+</body>
+</html>
+
