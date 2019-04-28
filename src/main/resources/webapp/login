@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet"/>
+    <link href='https://d33wubrfki0l68.cloudfront.net/css/9bf98939b112782a335767fca09213851415fa8f/css/style.css'
+          rel='stylesheet'/>
+
+    <title>Web development</title>
+</head>
+
+<body>
+<header>
+    <!-- Navigation -->
+
+
+    <!-- Main nav for screen -->
+    <div class="navbar-fixed">
+        <nav class="#424242 grey darken-3">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a class="brand-logo" href="#!"><i class="material-icons">clear_all</i>Web dev</a>
+                    <a class="sidenav-trigger" data-target="mobile-demo" href="#"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="/project.html">Project</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="/index.html" method="POST">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Sidenav (hidden unless mobile) -->
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="/project.html">Project</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/index.html" method="POST">Logout</a></li>
+    </ul>
+</header>
+<main>
+    <!-- Main page content -->
+    <div class="parallax-container valign-wrapper">
+        <div class="row">
+            <div class="col s12 center">
+                <h1 class="white-text">Welcome</h1>
+                <p class="flow-text white-text"> Web development</p>
+                <i class="material-icons medium white-text bouncy">keyboard_arrow_down</i>
+            </div>
+        </div>
+        <div class="parallax">
+            <img src="img/img1.jpg"/>
+        </div>
+    </div>
+    <div class="container">
+        <!-- Introduction -->
+        <div class="row section v-align center">
+            <div class="intro">
+                <h4 class="header" id="overview">Overview</h4>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="page-footer #424242 grey darken-3">
+    <div class="container center">
+        © 2019 GCU - Web Dev
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src='https://d33wubrfki0l68.cloudfront.net/js/d5610ec93920603effb1e186181da84fc906c7c9/js/main.js'></script>
+
+</body>
+</html>
